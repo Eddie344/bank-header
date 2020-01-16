@@ -449,6 +449,7 @@ svg:not(:root) {
 	}
 	.head-left-menu, .head-menu-level-1 {
 		overflow-x: auto;
+		overflow-y: hidden;
 		margin-left: -16px;
 		margin-right: -16px;
 	}
