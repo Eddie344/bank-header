@@ -163,6 +163,9 @@ button:hover {
 	align-items: center;
 	justify-content: flex-start;
 }
+.head-menu-level-1 .top-sub-menu-nav a:hover {
+    color: #ea212e;
+}
 .head-menu-level-1 .top-sub-menu-nav > *:nth-child(n + 2) {
     padding-left: 12px;
 }
