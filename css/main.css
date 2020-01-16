@@ -448,7 +448,7 @@ svg:not(:root) {
 		-ms-grid-column-span: 2;
 	}
 	.head-left-menu, .head-menu-level-1 {
-		overflow: auto;
+		overflow-x: auto;
 		margin-left: -16px;
 		margin-right: -16px;
 	}
