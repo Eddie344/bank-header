@@ -560,9 +560,10 @@ svg:not(:root) {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    height: 100%;
-	-webkit-transform: translateX(calc(-100% - 32px));
-    transform: translateX(calc(-100% - 32px));
+	height: 100%;
+	left: -100%;
+	/* -webkit-transform: translateX(calc(-100% - 32px));
+    transform: translateX(calc(-100% - 32px)); */
     transition: left .35s ease-in,-webkit-transform .35s ease-in;
     -webkit-transition: left .35s ease-in,-webkit-transform .35s ease-in;
     transition: transform .35s ease-in,left .35s ease-in;
@@ -571,8 +572,9 @@ svg:not(:root) {
     -webkit-tap-highlight-color: transparent;
 }
 .side-menu__show {
-	-webkit-transform: translateX(0);
-	transform: translateX(0);
+	/* -webkit-transform: translateX(0);
+	transform: translateX(0); */
+	left: 0;
 }
 .side-menu:before {
     content: '';
@@ -660,7 +662,8 @@ svg:not(:root) {
     display: -ms-inline-flexbox;
     display: inline-flex;
     margin-left: auto;
-    padding: 10px 16px;
+	padding: 10px 16px;
+	cursor: pointer;
 }
 .side-menu__content {
     height: 100%;
@@ -701,6 +704,7 @@ svg:not(:root) {
 	        justify-content: space-between;
 	height: 44px;
 	color: #333;
+	cursor: pointer;
 }
 .side-menu__item .item-top__show-dropdown {
 	width: 24px;
